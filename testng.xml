@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1"  parallel="methods" thread-count="1" verbose="1" >
+          <listeners>
+            <listener class-name="CustomTestNGReporter" />
+        </listeners>
+      <test name="WebServices testing">
+       <classes>
+            <class name="EmailBOTest"/>
+            <class name="ClientSoapTest"/>
+            <class name="ClientRestTest"/>
+          </classes>
+    </test>
+</suite>
